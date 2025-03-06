@@ -115,6 +115,8 @@ main {
   padding: 20px;
   grid-column: 2 / 3;
   max-width: 100%;
+  width:auto;
+  height:auto;
 }
 
 .country-content{
@@ -133,6 +135,7 @@ main {
 .country img {
   max-width: 50%;
   height: auto;
+  width:auto;
  
 }
 
