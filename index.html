@@ -1,44 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valorie Broderick WDD 131</title>
-    <link rel="stylesheet" href="styles/layout.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Valorie Broderick - home page"
+    />
+    <meta name="author" content="Valorie Broderick" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Valorie Broderick</title>
+    <link rel="stylesheet" href="styles/base.css" />
 
-<body>
-    <div class ="body-container">
-        <header>
-            <div class ="header-content">
-                <p>header content</p>
-            </div>
-            
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#" title="Home">Home</a></li>
-                    <li><a href="#" title="About Us">About</a></li>
-                    <li><a href="#" title="Contact">Contact</a></li>
-                    <li><a href="#" title="Store">Store</a></li>
-                    <li><a href="#" title="News">News</a></li>
-                </ul>
-            </nav>
-            
-        </header>
-        <main>
-            
-            <p>main content</p>
-            
-        </main>
-        <aside>
-            <p>aside content</p>
-        </aside>
-        <footer>
-            <p>footer content</p>
-        </footer>
-    </div> 
-<!-- close of body-container div -->
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius+Swash+Caps&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+  </head>
 
+  <body>
+    <script src="scripts/getdates.js" defer></script>
+    <div class="body-container">
+      <header>
+        <div class="header-content">
+          <h1>WDD 131 - Dynamic Web Fundamentals - Valorie Broderick</h1>
+        </div>
 
+        <nav>
+          <ul class="navigation">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/valorie-broderick/"
+                title="LinkedIn"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://byupw.instructure.com/" title="Canvas">Canvas</a>
+            </li>
+            <li>
+              <a
+                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                title="Scripture"
+                >Scripture</a
+              >
+            </li>
+            <li><a href="#" title="Final Project">Final Project</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="card about">
+          <h2>About Me</h2>
+          <div class="about-content">
+            <p>
+              My name is Valorie Broderick. I live in the United States in
+              Illinois. I like painting, digital art, and listening to
+              audiobooks. I have two big, crazy dogs, who I love. I teach
+              Primary and do the ward bulletin.
+            </p>
+            <img
+              class="profile-img"
+              src="images/Val_xsmall.webp"
+              alt="Valorie Broderick"
+            />
+          </div>
+        </section>
+        <section class="card country">
+          <h3>Illinois, USA</h3>
+          <hr>
+          <div class="country-content">
+            <img
+              src="images/United-States-of-America.webp"
+              alt="Valorie Broderick"
+            />
+            <p>
+              The USA is a crazy country where lots of crazy stuff happens. All
+              the while, people chant "USA!" while others facepalm.
+            </p>
+            
+          </div>
+        </section>
+      </main>
+      <aside>
+        <p>aside content</p>
+      </aside>
+      <footer>
+        <span id="current-year"></span>
+        <span id="lastModified"></span>
+      </footer>
+    </div>
+    <!-- close of body-container div -->
+  </body>
 </html>
