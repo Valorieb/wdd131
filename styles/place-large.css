@@ -18,6 +18,10 @@
     top: 50px;
   }
 
+  .weather-icon {
+    display:none;
+  }
+
   .data {
     right: 20px;
     top: 250px;
