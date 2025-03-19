@@ -1,7 +1,19 @@
+:root {
+  --background-color: antiquewhite;
+  --primary-font: "Open Sans", sans-serif;
+  --primary-font-style: normal;
+  --font-weight: 400;
+  --decorative-line-color: rgb(145, 149, 145);
+  --weather-bg: rgb(77, 91, 77);
+  --weather-text-color: rgb(252, 252, 252);
+  --hero-img-padding: 20px;
+  --hero-bg-color: rgb(69, 63, 58);
+}
+
 body {
-  background-color: antiquewhite;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+  background-color: var(--background-color);
+  font-family: var(--primary-font);
+  font-style: var(--primary-font-style);
   font-variation-settings: "wdth" 100;
 }
 
@@ -12,33 +24,33 @@ footer {
 
 h1 {
   font-family: "Knewave", system-ui;
-  font-weight: 400;
+  font-weight: var(--font-weight);
   font-style: normal;
   text-align: center;
-  color: rgb(69, 63, 58);
+  color: var(--hero-bg-color);
   font-size: 45px;
 }
 
 h2 {
   text-align: center;
   font-family: "Kite One", sans-serif;
-  font-weight: 400;
+  font-weight: var(--font-weight);
   font-style: normal;
 }
 
 .decorative-line {
   border: 0;
   height: 2px;
-  background-color: rgb(145, 149, 145);
+  background-color: var(--decorative-line-color);
   width: 50%;
   margin: 20px auto;
 }
 
 .weather,
 .data {
-  background-color: rgb(77, 91, 77);
-  border: 1px solid rgb(145, 149, 145);
-  color: rgb(252, 252, 252);
+  background-color: var(--weather-bg);
+  border: 1px solid var(--decorative-line-color);
+  color: var(--weather-text-color);
   padding: 20px;
 }
 
@@ -62,6 +74,6 @@ picture {
   width: 100%;
   height: auto;
   object-fit: cover; /* Ensures the image covers the container without distortion */
-  padding: 20px;
+  padding: var(--hero-img-padding);
   box-sizing: border-box; /* Prevents padding from causing overflow */
 }
