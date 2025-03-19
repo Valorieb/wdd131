@@ -32,10 +32,15 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   font-family: "Kite One", sans-serif;
   font-weight: var(--font-weight);
   font-style: normal;
+  margin:0
+}
+
+.weather-icon {
+  width:24px;
+  height: auto;
 }
 
 .decorative-line {
@@ -52,13 +57,18 @@ h2 {
   border: 1px solid var(--decorative-line-color);
   color: var(--weather-text-color);
   padding: 20px;
+
+    /* Flexbox to center heading + icon */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
 }
 
-.weather h2::after {
-  content: url("../images/weather-icon.svg");
-  width: 24px;
-  height: auto;
-  display: inline-block;
+.weather-header {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  justify-content: center; /* Center horizontally */
+  gap: 8px; /* Space between h2 and icon */
 }
 
 .info {
@@ -77,3 +87,5 @@ picture {
   padding: var(--hero-img-padding);
   box-sizing: border-box; /* Prevents padding from causing overflow */
 }
+
+
