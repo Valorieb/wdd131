@@ -1,0 +1,25 @@
+@media screen and (min-width: 935px) {
+  .weather h2::after {
+    content: "🌤️";
+  }
+  main {
+    position: relative;
+  }
+
+  .weather,
+  .data {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    background-color: rgb(77, 91, 77, 0.9);
+  }
+
+  .weather {
+    top: 50px;
+  }
+
+  .data {
+    right: 20px;
+    top: 250px;
+  }
+}

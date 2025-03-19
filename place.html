@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Place Assignment" />
+    <meta name="author" content="Valorie Broderick" />
+    <title>Patagonia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Knewave&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kite+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 935px)"/>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Patagonia</h1>
+    </header>
+    <main>
+      <div class="hero">
+        <picture>
+          <source
+            srcset="images/patagonia-hero-medium.webp"
+            media="(max-width: 1280px)"
+          />
+          <source
+            srcset="images/patagonia-hero-small.webp"
+            media="(max-width: 640px)"
+          />
+          <img
+            src="images/patagonia-hero-large.webp"
+            class="hero-img"
+            alt="Mountain lake in Patagonia"
+            width="1920"
+            height="1280"
+          />
+        </picture>
+      </div>
+      <div class="info">
+        <div class="weather">
+          <h2>Weather</h2>
+          <hr class="decorative-line" />
+          <p>Temperature: 67 °F</p>
+          <p>Conditions: Sunny</p>
+          <p>Wind: 4 mph</p>
+          <span id="windchill"></span>
+        </div>
+        <div class="data">
+          <h2>Data 🤓</h2>
+          <hr class="decorative-line" />
+          <p>Countries: Argentina, Chile</p>
+          <p>Area: 402,734 sq mi</p>
+          <p>
+            Time Zones: Argentina Time (ART), Chile Standard Time (CLT), Chile
+            Summer Time (CLST)
+          </p>
+          <p>Population: 1,999,540</p>
+          <p>Climate: Cool and dry</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span id="current-year"></span>
+      <span id="lastModified"></span>
+    </footer>
+  </body>
+</html>

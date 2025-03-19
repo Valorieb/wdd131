@@ -1,0 +1,67 @@
+body {
+  background-color: antiquewhite;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: rgb(69, 63, 58);
+  font-size: 45px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Kite One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.decorative-line {
+  border: 0;
+  height: 2px;
+  background-color: rgb(145, 149, 145);
+  width: 50%;
+  margin: 20px auto;
+}
+
+.weather,
+.data {
+  background-color: rgb(77, 91, 77);
+  border: 1px solid rgb(145, 149, 145);
+  color: rgb(252, 252, 252);
+  padding: 20px;
+}
+
+.weather h2::after {
+  content: url("../images/weather-icon.svg");
+  width: 24px;
+  height: auto;
+  display: inline-block;
+}
+
+.info {
+  padding: 20px;
+}
+
+picture {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  padding: 20px;
+  box-sizing: border-box; /* Prevents padding from causing overflow */
+}
