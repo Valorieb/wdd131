@@ -35,7 +35,7 @@ h2 {
   font-family: "Kite One", sans-serif;
   font-weight: var(--font-weight);
   font-style: normal;
-  margin:0
+  margin:0;
 }
 
 .weather-icon {
