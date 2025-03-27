@@ -1,0 +1,27 @@
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  font-size: 0.85rem;
+}
+
+table{
+    border: solid blueviolet 3px;
+    padding:10px;
+    border-collapse: collapse;
+}
+
+th{
+    padding:10px;
+    color:aliceblue;
+    background-color: black;
+}
+
+td{
+    padding:10px;
+    text-align: center;
+    border: 1px solid rgb(215, 214, 214);
+}
+
+tbody tr:nth-child(odd){
+    background-color:rgb(235, 233, 231);
+}
