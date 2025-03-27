@@ -138,7 +138,7 @@ newnav.addEventListener("click", () => {
 });
 
 function displayTemples(templesArray) {
-  templesArray.forEach((temple) => {
+  templesArray.forEach((temple, index) => {
     const container = document.createElement("div");
     const text = document.createElement("p");
     const heading = document.createElement("h3");
@@ -152,6 +152,7 @@ function displayTemples(templesArray) {
 `;
 
     const img = document.createElement("img");
+    
     img.setAttribute("src", `${temple.imageUrl}`);
     img.setAttribute("alt", `${temple.templeName}`);
     img.setAttribute("loading", "lazy");
@@ -161,9 +162,21 @@ function displayTemples(templesArray) {
       img.height = (img.naturalHeight / img.naturalWidth) * img.width;
     };
 
+    if(index < 3){
+      preloadImage(temple.imageUrl);
+    }
+
     container.appendChild(heading);
     container.appendChild(img);
     container.appendChild(text);
+
+    function preloadImage(url) {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.href = url;
+      link.as = "image";
+      document.head.appendChild(link);
+    }
 
     templecards.appendChild(container);
   });
