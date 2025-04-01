@@ -5,8 +5,14 @@ body {
   font-style: normal;
   padding: 20px;
   text-align: center;
-  background-color: #3A468C;
+  background-color: #3a468c;
   color: whitesmoke;
+}
+
+footer {
+  border: 2px dotted #c379d0;
+  padding: 50px;
+  margin: 20px;
 }
 
 h1 {
@@ -27,6 +33,7 @@ img {
   padding: 20px;
   display: block;
   margin: 0 auto;
+  border-radius: 5%;
 }
 
 li {
@@ -37,7 +44,20 @@ li::before {
   content: "🌷 ";
 }
 
+.name {
+  background-color: #b5bf63;
+  color: black;
+  padding: 20px;
+  border: #8a8c45 5px solid;
+}
+
 .wireframe {
-    width: 900px;
-    height:auto;
+  width: 900px;
+  height: auto;
+}
+
+.the-rest {
+  border: 5px dotted #3b568c;
+  margin:20px;
+  padding:20px;
 }
