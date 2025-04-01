@@ -1,0 +1,43 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px;
+  text-align: center;
+  background-color: #3A468C;
+  color: whitesmoke;
+}
+
+h1 {
+  font-family: "Send Flowers", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+li::before {
+  content: "🌷 ";
+}
+
+.wireframe {
+    width: 900px;
+    height:auto;
+}
