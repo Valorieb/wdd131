@@ -2,7 +2,6 @@ body {
   text-align: left;
   padding: 20px;
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   background-color: rgb(179, 183, 183);
@@ -118,11 +117,4 @@ textarea {
 
 .stars input:checked ~ label:before {
   content: "\2605";
-}
-
-@-moz-document url-prefix() {
-  .stars input:checked ~ label:before {
-    font-size: 36px;
-    line-height: 21px;
-  }
 }
