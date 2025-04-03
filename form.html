@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Valorie Broderick">
+    <meta name="Description" content="Product review form">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+      <form  action="review.html" method="get">
+        <label for="product_names"><span class="required">* </span>Product Name:</label>
+        
+        <br/>
+        <select id="product_names" name="product_name" required >
+          <option value="" disabled selected>Select a product...</option>
+          <option value="video_games">Video Games</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="cute_clothes">Cute Clothes</option>
+          <option value="silly_socks">Silly Socks</option>
+        </select>
+        <br/>
+        <br/>
+        <label for="rating"><span class="required">* </span>Rating</label>
+        <div class="stars">
+          <input
+            type="radio"
+            id="fivestar"
+            name="stars"
+            value="5"
+            required
+          ><label for="fivestar"></label>
+          <input
+            type="radio"
+            id="fourstar"
+            name="stars"
+            value="4"
+            required
+          ><label for="fourstar"></label>
+          <input
+            type="radio"
+            id="threestar"
+            name="stars"
+            value="3"
+            required
+          ><label for="threestar"></label>
+          <input
+            type="radio"
+            id="twostar"
+            name="stars"
+            value="2"
+            required
+          ><label for="twostar"></label>
+          <input
+            type="radio"
+            id="onestar"
+            name="stars"
+            value="1"
+            required
+          ><label for="onestar"></label>
+
+        </div>
+        <label for="date"><span class="required">* </span>Date of Installation</label>
+         <br/>
+        
+        <input type="date" id="date" name="date" required>
+        <br>
+        <br>
+        <p>Which product features did you find useful? <em>(Optional) (Check all that apply)</em></p>
+
+        <label>
+            <input type="checkbox" id="durability" name="durability" value="durability">
+            Durability
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="ease" name="ease" value="ease">
+            Ease of Use
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="performance" name="performance" value="performance">
+            Performance
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="design" name="design" value="design">
+            Design
+        </label>
+        <br>
+        <br>
+        <label>
+            <br>
+            Write a Review <em>(Optional)</em><br>
+            <textarea></textarea>
+        </label>
+        <br>
+        <label>
+            <br>
+            User Name <em>(Optional)</em><br>
+            <input type="text" id="" name="">
+            <br>
+        </label>
+        <br>
+        <button>Post Review</button>
+        
+      </form>
+    </main>
+    <footer>
+      <span id="current-year"></span>
+      <span id="lastModified"></span>
+    </footer>
+  </body>
+</html>
