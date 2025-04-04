@@ -1,6 +1,5 @@
 const select = document.querySelector("select");
-const required = document.querySelector("required");
-const label = document.querySelector("label");
+const requiredFields = document.querySelectorAll("[required]");
 const button = document.querySelector("button");
 
 const products = [
@@ -31,7 +30,6 @@ const products = [
   },
 ];
 
-
 products.forEach((product) => {
   const option = document.createElement("option");
   option.value = product.name.replace(/\s+/g, "_");
@@ -39,18 +37,32 @@ products.forEach((product) => {
   select.append(option);
 });
 
-let counter = 0;
+let counter = localStorage.getItem("count")
+  ? parseInt(localStorage.getItem("count"))
+  : 0;
 
-button.addEventListener("click", (e)=>{
-  counter += 1; 
-  localStorage.setItem("count", counter);
-  let getCount = localStorage.getItem("count");
-  console.log(`Count is ${getCount}`);
-  alert(`Count is ${getCount}`);
+button.addEventListener("click", (e) => {
+  // Prevent form submission and button click unless all required fields are filled
+  e.preventDefault();
+
+  // Check if all required fields are filled
+  let allRequiredFilled = true;
+  requiredFields.forEach((field) => {
+    if (
+      !field.value ||
+      (field.type === "radio" &&
+        !document.querySelector('input[name="stars"]:checked'))
+    ) {
+      allRequiredFilled = false;
+    }
+  });
+
+  // Only increment the counter if all required fields are filled
+  if (allRequiredFilled) {
+    counter += 1;
+    localStorage.setItem("count", counter);
+    alert(`Count is ${counter}`);
+  } else {
+    alert("Please fill in all required fields.");
+  }
 });
-
-
-
-
-
-
