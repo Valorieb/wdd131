@@ -1,0 +1,55 @@
+form {
+    padding:20px;
+    margin:20px;
+    display:block;
+    gap:5px;
+    justify-content: space-between;
+}
+
+label{
+    margin:5px;
+}
+
+select {
+    text-align: center;
+    padding:5px;
+    width: 150px;
+    margin:5px;
+}
+
+h2 {
+  padding: 20px;
+  color: black;
+  border-bottom: #2f3a73 dotted 5px;
+  background-color: #c379d0;
+  border-radius: 10px;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c379d0;
+  width:300px;
+}
+
+#flower-cards {
+  display: block;
+}
+
+.flower-card {
+  padding: 20px;
+  height: auto;
+  margin: 0px;
+  border: solid 1px;
+  border-radius: 10px;
+  background-color: #2f3a73;
+}
+
+.flower-img {
+    height: 150px;
+    width:auto;
+
+}
+

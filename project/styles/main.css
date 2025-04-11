@@ -1,0 +1,196 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px;
+  text-align: center;
+  background-color: #3b568c;
+  color: whitesmoke;
+  display: block;
+}
+
+.body-container {
+  background-color: #3a468c;
+  width: 400px;
+  height: auto;
+  justify-self: center;
+}
+
+footer {
+  border-top: 2px dotted #c379d0;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  display: block;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Send Flowers", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  font-size: 40px;
+  flex: 1;
+  align-self: center;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 980px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 15vh;
+    width: 250px;
+    background-color: #b5bf63;
+    padding-top: 60px;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+}
+
+nav.show {
+  display: block;
+}
+
+.extend-nav {
+  padding: 10px;
+  margin: 0;
+  width: 380px;
+  background-color: #b5bf63;
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  color: #841a94;
+}
+
+.blurb-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.blurb {
+  padding: 20px;
+  margin: 50px;
+  display: block;
+  box-shadow: 0 0 0 5px #8a8c45;
+  background-color: #b5bf63;
+  font-size: large;
+  border-radius: 20px;
+  color: black;
+  width: 700px;
+  height: auto;
+}
+
+.blurb h3 {
+  margin: 0;
+  padding: 20px;
+}
+
+.blurb p {
+  padding: 20px;
+  background-color: azure;
+  border-radius: 10px;
+}
+
+.blurb img {
+  width: 70%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.hero img {
+  width: 400px;
+  height: auto;
+}
+
+.wireframe {
+  width: 900px;
+  height: auto;
+}
+
+.the-rest {
+  border: 5px dotted #3b568c;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+}
+
+.top-picks,
+.browse,
+.tutorial {
+  border: #b5bf63 2px solid;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.show li {
+  text-align: center;
+  display: block;
+  background-color: #b5bf63;
+  padding: 10px;
+  max-width: 200px;
+}
+
+#menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: #b5bf63;
+}
+
+#menu::before {
+  content: "≡";
+}
+
+#menu.show::before {
+  content: "x";
+}

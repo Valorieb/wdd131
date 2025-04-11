@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="home page">
+    <meta name="author" content="Valorie Broderick">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Send+Flowers&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="styles/library.css">
+    <link rel="stylesheet" href="styles/library-large.css">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/library.js" type="module"></script>
+    <title>BG Flower Library</title>
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="extend-nav"></div>
+      <header>
+        <div class="header-container">
+          <a id="menu" href="#"></a>
+          <img src="images/cart-graphic.webp" alt="graphic of pink flowers">
+          <h1>Bloom and Gather</h1>
+          <nav class="navigation">
+            <ul>
+              <li>
+                <a href="index.html" title="Home Page"><strong>Home</strong></a>
+              </li>
+              <li>
+                <a href="library.html" title="Flower Library"
+                  ><strong>Flower Library</strong></a
+                >
+              </li>
+              <li>
+                <a href="blog.html" title="Blog"
+                  ><strong>Garden Blog</strong></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <h2>Flower Library 🌻📖</h2>
+        <p>Filter by:</p>
+
+        <form>
+          <div>
+            <label for="light-care">Light Requirements: </label>
+            <select id="light-care" name="light-care">
+              <option value="Any">Any</option>
+              <option value="☀️ Full sun">Full Sun</option>
+              <option value="🌤️ Partial shade">Partial-shade</option>
+              <option value="☀️ Full sun to partial shade">
+                Full sun to partial-shade
+              </option>
+              <option value="☁️ Shade">Full-shade</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="water">Watering Requirements: </label>
+            <select id="water" name="water">
+              <option value="Any">Any</option>
+              <option value="💧 Once a week">Once a week</option>
+              <option value="💧 Every other week">Every other week</option>
+              <option value="💧 Every day">Every day</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="flower-season">Planting Season: </label>
+            <select id="flower-season" name="flower-season">
+              <option value="Any">Any</option>
+              <option value="Spring">Spring</option>
+              <option value="Summer">Summer</option>
+              <option value="Fall">Fall</option>
+              <option value="Winter">Winter</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="bouquet">Pairs Classically With: </label>
+            <select id="bouquet" name="bouquet">
+              <option value="Any">Any</option>
+              <option value="Rose">Roses</option>
+              <option value="Peony">Peonies</option>
+              <option value="Ranunculus">Ranunculus</option>
+              <option value="Carnation">Carnations</option>
+              <option value="Lavender">Lavender</option>
+              <option value="Bachelor's Button">Bachelor's Buttons</option>
+              <option value="Baby's Breath">Baby's Breath</option>
+              <option value="Hydrangea">Hydrangeas</option>
+              <option value="Lisianthus">Lisianthus</option>
+            </select>
+          </div>
+          <br />
+          <button type="submit" id="flower-btn">View FLowers</button>
+        </form>
+        <span id="flower-cards"></span>
+      </main>
+
+      <footer>
+        <span id="current-year"></span>
+        <br />
+        <span id="lastModified"></span>
+      </footer>
+    </div> <!-- close of body-container -->
+  </body>
+</html>

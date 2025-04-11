@@ -1,0 +1,14 @@
+.blog-post, figure{
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.blog-post img{
+    width:300px;
+    height:auto;
+}
+
+figcaption{
+    padding:20px;
+}

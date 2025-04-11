@@ -1,0 +1,64 @@
+@media screen and (min-width: 980px) {
+  footer {
+    width: 900px;
+  }
+
+  nav {
+    display:block;
+    padding: 10px;
+    margin: 0;
+    width: 50%;
+    background-color: #b5bf63;
+    color: black;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .extend-nav {
+    width: 980px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .body-container {
+    width: 1000px;
+  }
+
+  .the-rest {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .blurb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .blurb h3 {
+    grid-column: 1/2;
+    align-self: end;
+  }
+
+  .blurb p {
+    grid-column: 1/2;
+  }
+
+  .blurb img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: end;
+  }
+
+  .hero img {
+    width: 950px;
+  }
+
+
+li::after{
+  display:none;
+}
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="home page">
+    <meta name="author" content="Valorie Broderick">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Send+Flowers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="styles/plan.css">
+    <title>Bloom and Gather</title>
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    
+  </head>
+  <body>
+    <div class="body-container">
+        <div class="extend-nav"></div>
+        <header>
+            <div class ="header-container">
+                <a id="menu" href="#"></a>
+                <img src="images/cart-graphic.webp" alt="graphic of pink flowers">
+                <h1>Bloom and Gather</h1>
+                <nav class="navigation">
+                    <ul>
+                       
+                        <li><a href="index.html" title="Home Page"><strong>Home</strong></a></li>
+                        <li><a href="library.html" title="Flower Library"><strong>Flower Library</strong></a></li>
+                        <li><a href="plan.html" title="Garden Planner"><strong>Garden Planner</strong></a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+            
+        </header>
+        <div>
+            <div class="hero">
+                <img src="images/garden-path-cropper-hero.jpg" alt="garden path">
+                
+            </div>
+    <main>
+        <div class="planner-heading">
+            <h2>Garden Planner 🗓️</h2>
+            </div>
+            <p class="explain"> Which flowers should you plant? When should you plant them? <br> <br>Fill out the form to find out!
+            </p>
+            <form>
+                <h2>Planting Suggestions</h2>
+                <label for="current-date">Current date:</label>
+                <br>
+                <input type="date" id="current-date" name="current-date">
+                <br>
+                <label for="current-date">Date of last frost:</label>
+                <br>
+                <input type="date" id="last-frost-date" name="last-frost-date">
+                <br>
+                <label for="planting-zone">Planting zone:</label>
+                <br>
+                <select id="planting-zone" name="planting-zone">
+                    <option value="select">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+                <br>
+                <label for="sow">Sowing location:</label>
+                <br>
+                <select id="sow" name="sow">
+                    <option value="select">Select</option>
+                    <option value="Starting indoors">Starting indoors</option>
+                    <option value="Sowing outdoors">Sowing outdoors</option>
+                </select>
+                <br>
+                <button type="submit">See Suggestions</button>
+            </form>
+            <br>
+            <hr>
+            <br>
+            <span id="flower-table"></span>
+            <table>
+                <caption><strong>Results</strong></caption>
+                <thead>
+                    <tr>
+                        <th>Flowers</th>
+                        <th>When to Plant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rose</td>
+                        <td>November</td>
+                    </tr>
+                    <tr>
+                        <td>Tulip</td>
+                        <td>November</td>
+                    </tr>
+                </tbody>
+                
+               
+            </table>
+        
+    </main>
+   <footer>
+        <span id="current-year"></span>
+        <br>
+        <span id="lastModified"></span>
+   </footer>
+
+
+  </body>
+</html>
