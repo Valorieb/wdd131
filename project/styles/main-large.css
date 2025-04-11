@@ -61,4 +61,7 @@
 li::after{
   display:none;
 }
+  #menu {
+    display: none;
+  }
 }
