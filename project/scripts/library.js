@@ -11,6 +11,7 @@ function displayFlowers(flowersArray) {
     const wateringText = document.createElement("p");
     const plantingText = document.createElement("p");
     const heading3 = document.createElement("h3");
+    const heart = document.createElement("span");
     const heading4 = document.createElement("h4");
     const img = document.createElement("img");
 
@@ -18,6 +19,24 @@ function displayFlowers(flowersArray) {
     img.setAttribute("src", `${flower.imageUrl}`);
     img.setAttribute("alt", `${flower.flowerName}`);
     img.setAttribute("loading", "lazy");
+
+    heart.textContent = "🤍";
+    heart.title = "Add favorite";
+    heart.classList.add("heart-icon");
+    heart.addEventListener("click", () => {
+      const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+      const index = favorites.indexOf(flower.flowerName);
+      if (index === -1) {
+        favorites.push(flower.flowerName);
+        heart.textContent = "💖";
+      }else{
+        favorites.splice(index, 1);
+        heart.textContent = "🤍";
+      }
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+    });
+      
 
     bouquetText.innerHTML = `
         Pairs with: ${flower.bouquet.join(", ")} <br>
@@ -29,6 +48,7 @@ function displayFlowers(flowersArray) {
       ", "
     )}`;
 
+    heading3.appendChild(heart);
     container.appendChild(heading3);
     container.appendChild(img);
     container.appendChild(bouquetText);
@@ -39,6 +59,9 @@ function displayFlowers(flowersArray) {
     container.classList.add("flower-card");
 
     flowercards.appendChild(container);
+
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    heart.textContent = favorites.includes(flower.flowerName) ? "💖" : "🤍";
   });
 }
 

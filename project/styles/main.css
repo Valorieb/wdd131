@@ -144,6 +144,17 @@ a:hover {
   justify-content: space-evenly;
 }
 
+.heart-icon {
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+
+}
+.heart-icon:hover {
+  transform: scale(1.2);
+}
+
 .hero img {
   width: 400px;
   height: auto;
